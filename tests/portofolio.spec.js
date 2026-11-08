@@ -8,7 +8,7 @@ test.describe('Portfolio Website Template', () => {
 
   test('menampilkan placeholder nama peserta', async ({ page }) => {
     await page.goto('/');
-    await expect(page.getByRole('heading', { name: /NAMA.*LENGKAP/ }).first()).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Muhammad Habibi El Islami' }).first()).toBeVisible();
   });
 
   test('menampilkan bagian Tentang Saya', async ({ page }) => {
